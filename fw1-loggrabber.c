@@ -4840,7 +4840,7 @@ read_config_file (char *filename, configvalues * cfgvalues)
  * BEGIN: function to initialize fields headers
  */
 void
-init_field_headers (char **headers[NUMBER_FIELDS])
+init_field_headers (char ***headers)
 {
   int i;
 
@@ -4860,7 +4860,7 @@ init_field_headers (char **headers[NUMBER_FIELDS])
  * BEGIN: function to initialize fields values
  */
 void
-init_field_values (char **values[NUMBER_FIELDS])
+init_field_values (char ***values)
 {
   int i;
 
@@ -4880,7 +4880,7 @@ init_field_values (char **values[NUMBER_FIELDS])
  * BEGIN: function to free field pointers
  */
 void
-free_field_arrays (char **array[NUMBER_FIELDS])
+free_field_arrays (char ***array)
 {
   int i;
 
