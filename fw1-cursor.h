@@ -9,9 +9,6 @@
 #define TOSTRING(x) STRINGIFY(x)
 #define POSITION_MAX_SIZE 32
 
-FILE *cursorstream;
-char cursorline[POSITION_MAX_SIZE + 1];
-
 int read_fw1_cursorfile (); // Return next log position from cursor file
 int write_fw1_cursorfile (const char *message, const char separator); // Deduce next log position from current message
 char* get_fw1_cursorname (const char *LogfileName); // Give cursor name associated with log file

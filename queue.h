@@ -46,10 +46,6 @@ typedef struct LinkedListElement {
         struct LinkedListElement *next; //The point to the next elementin this list
 } LinkedList;
 
-// The first node in the list, called the head
-LinkedList * head;
-// The last node in the list, called the tail, which is not necessary for a singly linked list
-LinkedList * tail;
 
 void initialize();                                //Initialization of a linked list
 void setThreshold(int thresh);        //Set the queue length limitation

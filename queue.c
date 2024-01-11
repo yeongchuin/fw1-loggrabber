@@ -37,6 +37,11 @@ int threadhold = 1000;
 // The count of elements in the list
 int countOfList=0;
 
+// The first node in the list, called the head
+LinkedList * head;
+// The last node in the list, called the tail, which is not necessary for a singly linked list
+LinkedList * tail;
+
 /*
 int main() {
         testLinkedList();

@@ -2,6 +2,9 @@
 
 #define CURSOR_FILE_EXT ".cursor"
 
+FILE *cursorstream;
+char cursorline[POSITION_MAX_SIZE + 1];
+
 int read_fw1_cursorfile () {
    rewind (cursorstream);
    fgets (cursorline, (POSITION_MAX_SIZE + 1), cursorstream);
